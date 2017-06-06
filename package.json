@@ -5,11 +5,11 @@
   "homepage": "http://www.collectionsjs.com",
   "author": "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal)",
   "contributors": [
-   {
-     "name": "Benoit Marchant"
-   }
- ],
- "keywords": [
+    {
+      "name": "Benoit Marchant"
+    }
+  ],
+  "keywords": [
     "collections",
     "data structures",
     "observable",

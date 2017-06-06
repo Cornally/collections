@@ -53,12 +53,14 @@ Array.unzip = function (table) {
 };
 
 function define(key, value) {
-    Object.defineProperty(Array.prototype, key, {
-        value: value,
-        writable: true,
-        configurable: true,
-        enumerable: false
-    });
+    if (!Array.prototype[key]) {
+        Object.defineProperty(Array.prototype, key, {
+            value: value,
+            writable: true,
+            configurable: true,
+            enumerable: false
+        });
+    }
 }
 
 define("addEach", GenericCollection.prototype.addEach);
